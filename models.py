@@ -14,3 +14,7 @@ class Person(Base):
     # Gives a representation of a Person (for printing out)
     def __repr__(self):
         return f"<Person({self.first_name} {self.last_name})>"
+
+    # Include a method:
+    def greeting(self):
+        print(f'{self.first_name} says "hello"!')
