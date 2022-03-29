@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
+# Base is called an Abstract Base Class - our SQL Alchemy models will inherit from this class
 Base = declarative_base()
 
 
@@ -18,3 +19,4 @@ class Person(Base):
     # Include a method:
     def greeting(self):
         print(f'{self.first_name} says "hello"!')
+
